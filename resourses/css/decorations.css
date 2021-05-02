@@ -1,0 +1,553 @@
+body {
+    margin: 40px;
+    padding: 0;
+}
+
+.mainbody{
+    display: block;
+}
+
+
+.logo {
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 600px;
+    display: none;
+}
+
+header {
+    padding:0px;
+    text-align: left;
+    height: 80px;
+}
+
+.mobilesection {
+    position: absolute;
+    visibility: hidden;
+
+}
+
+
+.labels {
+    margin-top: 2px;
+    padding: 0px 0;
+    text-align: center;
+    background: rgb(245 245 245);
+    border-top:1px outset #cccccc;
+    border-bottom:1px inset #cccccc;
+
+}
+
+.labeldata {
+    display: inline-block;
+    font-size: 12px;
+    width: 18%;
+    padding-left: 10px;
+    background-color: rgb(245 245 245);
+    text-align: left;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #444444;
+
+
+}
+
+#subject {
+
+    width: 49%;
+
+
+}
+
+.fromarrow {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+    visibility: hidden;
+
+
+}
+
+#date {
+    width: 10%;
+    color: black;
+
+}
+
+#dateandarrow {
+    display: inline-block;
+}
+
+.datearrow {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 5px;
+    visibility: visible;
+
+}
+
+.rowdata {
+    display: inline-block;
+    font-size: 16px;
+    width: 18%;
+    padding-left: 10px;
+    text-align: left;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #444444;
+}
+
+#topic {
+
+    width: 49%;
+
+
+}
+
+#time {
+    width: 10%;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+.alldata {
+    margin-top: 0px;
+    padding: 0px 0;
+    text-align: center;
+    border-bottom:1px inset #cccccc;
+
+}
+
+#resultdata {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #666666;
+    width: 100%;
+    border-bottom:1px inset #cccccc;
+    padding: 0.5px;
+}
+
+.resultcount {
+    padding:0px;
+
+}
+
+#count {
+    font-size: 20px;
+}
+#mails {
+    margin-left: -3px;
+}
+
+
+
+.searchbar {
+    padding-top: 10px;
+}
+
+#datebar {
+    border-radius: 6px;
+    border-top:2px outset #888888;
+    border-bottom:2px inset #888888;
+    border-left:2px outset #888888;
+    border-right:6px inset #888888;
+    height: 30px;
+    padding-left: 40px;
+    z-index: 2;
+
+}
+
+.iconbarandsearch {
+    display: inline-block;
+}
+
+#datesearch {
+    width: 20px;
+    height: 34px;
+    background-color: rgb(245 245 245);
+    position: absolute;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -5px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top:1px outset #cccccc;
+    border-bottom:1px inset #cccccc;
+    border-right:1px inset #cccccc;
+
+}
+
+#dateicon {
+    position: absolute;
+    width: 20px;
+    height: 34px;
+    z-index: 1;
+    padding-left: 15px;
+}
+
+.notification {
+    display: inline-block;
+}
+
+#notificationedit1 {
+    padding-left: 5px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 50px;
+    width: 22px;
+
+}
+
+#notificationedit2 {
+    padding-left: 5px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 22px;
+    width: 22px;
+
+}
+
+#notificationedit3 {
+    padding-left: 5px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 44px;
+    width: 22px;
+
+}
+
+#notficationclip1 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 248px;
+
+}
+
+#notficationclip2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 215px;
+
+}
+
+#notficationclip3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 500px;
+
+}
+
+.alldata:hover {
+    cursor: pointer;
+    background-color: #eeeeff;
+}
+
+.alldata:hover p {
+    color: rgb(0 0 255);
+}
+
+#timearrow {
+    height: 8px;
+    width:8px;
+    visibility: hidden;
+}
+
+#mailicon {
+    position: absolute;
+    width: 22px;
+    height: 33px;
+    margin-left: -25px;
+    margin-top: 6px;
+    visibility: hidden;
+}
+
+#secondemail {
+    position: absolute;
+    visibility: hidden;
+
+.contentbody {
+    margin-left: 27px;
+    margin-top: -10px;
+
+}
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+body {
+    margin: 0px;
+    padding: 0;
+}
+
+
+.logo {
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 173px;
+    display: none;
+}
+
+.labels {
+    positiona: absolute;
+    visibility: hidden
+
+}
+
+.mobilesection {
+    position: relative;
+    visibility: visible;
+    background: rgb(245 245 245);
+    height: 45px;
+    padding-top: 1px;
+    margin-top: 2px;
+    margin-bottom: -90px;
+    padding-left: 24px;
+    border-top:1px inset #cccccc;
+    border-bottom:1px inset #cccccc;
+}
+
+.mobilesection p {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #444444;
+    font-size: 14px;
+}
+
+.mobilesection #from{
+    margin-right: 20px;
+    color: #000000;
+    padding-right: 0px;
+}
+
+.mobilesection #to{
+    margin-right: 20px;
+    border-left:1px outset #cccccc;
+    border-right:1px inset #cccccc;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.mobilesection #subject{
+    margin-right: 20px;
+    border-right:1px inset #cccccc;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: -20px;
+}
+
+.mobilesection #date{
+    margin-right: 20px;
+    margin-left: -20px;
+    color: #444444;
+    border-right:1px inset #cccccc;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+
+.mobilesection img {
+    margin-left: 2px;
+}
+
+
+.datearrow {
+    visibility: hidden;
+   }
+.fromarrow{
+    margin-top: 4px;
+    visibility: visible;
+}
+
+.resultcount {
+    margin-left: 23px;
+}
+
+.searchbar {
+    margin-left: 23px;
+}
+
+.notification {
+    display: block;
+}
+
+#notificationedit1 {
+    padding-left: 5px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 65px;
+    width: 22px;
+    display: none;
+
+}
+
+#notificationedit2 {
+    padding-left: 3px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 353px;
+    margin-top: -28px;
+    width: 22px;
+
+}
+
+#notificationedit3 {
+    padding-left: 3px;
+    background-color: #777777;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 353px;
+    margin-top: -28px;
+    width: 22px;
+
+}
+
+#notficationclip1 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-top: -76px;
+    margin-left: 318px;
+
+}
+
+#notficationclip2 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-top: -76px;
+    margin-left: 318px;
+
+}
+
+#notficationclip3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -76px;
+    margin-left: 318px;
+
+}
+
+.rowdata {
+    display: block;
+    font-size: 13px;
+    width: 18%;
+    padding-left: 0px;
+    margin-left: 25px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #444444;
+}
+
+
+.alldata {
+    margin-top: 0px;
+    padding: 2px 0px 0px 0px;
+    text-align: left;
+    border-bottom:1px inset #cccccc;
+
+}
+
+
+#sender  {
+    width: 100%;
+    margin-left: 45px;
+    margin-bottom: 3px
+
+}
+
+#sender p {
+    width: 100%;
+
+}
+
+#receiver  {
+    width: 100%;
+    margin-left: 45px;
+    margin-top: -5px;
+}
+
+#topic  {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: -5px;
+    padding-top: 0px;
+}
+
+#time {
+    position: absolute;
+    height: 4%;
+    padding-bottom: 0px;
+    margin-top: -75px;
+    margin-left: 370px;
+    width: 100%;
+}
+
+#time p {
+    display: inline;
+}
+
+#timearrow {
+    height: 8px;
+    width:8px;
+    visibility: visible;
+    margin-left: 5px;
+}
+
+#mailicon {
+    position: absolute;
+    width: 22px;
+    height: 33px;
+    margin-left: -25px;
+    margin-top: 6px;
+    visibility: visible;
+}
+
+#secondemail {
+    visibility: visible
+}
+
+.contentbody {
+    margin-left: 27px;
+    margin-top: -10px;
+
+}
+
+
+}

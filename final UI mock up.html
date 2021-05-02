@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="resourses/css/decorations.css">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <script type="text/javascript" src="resourses/life.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+
+    </head>
+
+    <body>
+
+
+        <header>
+                <div class="searchbar">
+                    <img id="dateicon" class="iconbarandsearch" src="resourses/icons/icon_calender.svg">
+                    <input id="datebar" class="iconbarandsearch" type="text" size="30" name="daterange" value="12/31/2019 - 01/02/2021" />
+                    <img id="datesearch" onclick="executesearch()" class="iconbarandsearch" src="resourses/icons/icon_search.svg">
+                </div>
+
+                <div class="resultcount">
+                    <p id="resultdata">Results: <span id="count">10</span> <span id="mails">mails(s)</span></p>
+                </div>
+        </header>
+        
+        <div class="mainbody" id="mainbody">
+            <div class="mobilesection">
+                <p><span id="from">From<img class="fromarrow"src="resourses/icons/icon_arrow01.svg"></span><span id="to">To</span><span id="subject">Subject</span><span id="date">Date</span></p>
+            </div>
+
+
+            <section class="labels">
+                <div class="labeldata" id="from">
+                    <p class="datadata" id="dateandarrow">From</p>
+                </div>
+    
+                <div class="labeldata" id="to">
+                    <p class="datadata">To</p>
+                </div>
+    
+                <div class="labeldata" id="subject">
+                    <p class="datadata">Subject</p>
+                </div>
+    
+                <div class="labeldata" id="date">
+                    <p class="datadata" id="dateandarrow">Date</p>
+                    <img class="datearrow" id="dateandarrow" src="resourses/icons/icon_arrow01.svg">
+                </div>
+    
+            </section>
+    
+            <section class="data">
+                <div class="alldata">
+
+                    <div class="rowdata" id="sender">
+                        <p class="mobile"><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">aaa@example.com</p>
+                    </div>
+
+                    <div class="rowdata" id="receiver">
+                        <p>zzz.zzz@example.com</p>
+                    </div>
+
+                    <div class="rowdata" id="topic">
+                        <p>[ HR-888 ] Notice of official announcement</p>
+                    </div>
+
+                    <div class="rowdata" id="time" value="2021">
+                        <p class="mobile" id="mobiletime">0:20<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Starting on November 1st, 2009, everthing in our showroom will be marked down at least 50%! Nowhere else in town will you
+                        find better deals on the greatest chairs, sofas, recliners and other household furnishing. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">bbb.bbbb@exam..</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>yyy@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>[web:333] "Web Contact"</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>0:10<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Filled to the brim with useful information and accompanied by free source code on Github
+for more than 120 demos, the Object Pascal Handbook is a truly complete guide to this
+evergreen language.
+Object Pascal Handbook is structured logically to help newcomers quickly learn the
+language while experienced developers can easily grasp how has evolved and make the best
+of its amazing new capabilities. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">ccc@xample.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p class="notification">xxx@example.com, <span id="secondemail">www.www@example.com</span></p>
+                        <p class="notification" id="notificationedit1">+1</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p class="notification">Happy New Year! Greetings for the New Year.</p>
+                        <img class="notification" id="notficationclip1" src="resourses/icons/icon_clip.svg">
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>0:00<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Another year come and gone!
+Thank you for a busy and wonderful 2018. We re-introduced our much-loved Doctor's Bag,
+released our new Sling Bag, introduced 5 new men's watch styles, and stocked in 2 new
+women's watch styles! We made some big changes to our website to make the shopping
+experience smoother and more pleasant. And WWD wrote about Linjer, which was just a
+dream come true. Phew! ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">ddd.dddd @exam.</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p class="notification">vvv.vvv@example.com, <span id="secondemail">uuu@example.com, ...</span></p>
+                        <p class="notification" id="notificationedit2">+1</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>[HR-887(Revised: Office Expansion Project Team)] Notice of off...</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>Jan 01<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Top of the Friday to you! We have got really good news to take you super excited into the
+weekend.Did you know that there is a slot for you to join other global developers and
+creators to build immersive AR and AI solutions for the chance to win up to USD 100,000 in
+cash prizes? If this isn’t good news well we have got some more up our sleeves. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">eee@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p class="notification">sss@example.com, <span id="secondemail">rrr.rrrr@example.com, ...</span></p>
+                        <p class="notification" id="notificationedit3">+2</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>[Github] Logout page</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>Jan 01<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>A sign in attempt requires further verification because we did not recognize your device. To
+complete the sign in, enter the verification code on the unrecognized device. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">fff.ffff@example.c...</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>qqq.qqq@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>[dev] Postfix 3.1.12/3.2.9/3.3.4 /3.4.5</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>Jan 01<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Hi! Surf the Internet Freely with iProVPN. iProVPN, a cutting-edge tech marvel, empowers
+internet users with complete anonymity, Internet freedom and data security against hackers,
+spies and snoopers. Advanced VPN servers. And dedicated servers, optimized for
+streaming, file-sharing, VoIP and more. The servers are fortified with 256-bit AES encryption
+that is used by militaries and intelligence agencies. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">ggg@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>ppp@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>Re:[Github] Brush-up on loading animation</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>Jan 01<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Our amazing FREE gadget giveaway is open now and ends on April 30! One lucky follower
+will be chosen at random to be the winner of the incredible Sony PS5 gaming console for
+non-stop entertainment, and it could be YOU! ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">hhh.hhh@examp...</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>000.000@example.comp>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p class="notification">Workplace Summary for sample, Inc.: Jun 2-Jun 9</p>
+                        <img class="notification" id="notficationclip2" src="resourses/icons/icon_clip.svg">
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2021">
+                        <p>Jan 01<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Open your TalkU app at least once a day, navigate through the simple check-in process, and
+you will get up to 10 free credits each time. As an added bonus, you may receive special
+offers from TalkU and its sponsors. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">iii@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>nnn@example.com</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p class="notification">I love you</p>
+                        <img class="notification" id="notficationclip3" src="resourses/icons/icon_clip.svg">
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2019">
+                        <p>2019/12/31<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Promoted apps are free and you can earn up to 90 free credits for each app you download.
+Most of our users can earn 500 free credits in 30 minutes by downloading just a few apps. If
+you don’t like them, simply delete the apps after receiving your credits. ...</p>
+                    </div>
+                </div>
+    
+    
+                <div class="alldata">
+                    <div class="rowdata" id="sender">
+                        <p><img id="mailicon" src="resourses/icons/icon_mail_sp.svg">Pablo-Diego-...</p>
+                    </div>
+    
+                    <div class="rowdata" id="receiver">
+                        <p>Pablo-Dieg0-José- Francisc...</p>
+                    </div>
+    
+                    <div class="rowdata" id="topic">
+                        <p>[info:888] ABC EQUIPMENT COMPANY</p>
+                    </div>
+    
+                    <div class="rowdata" id="time" value="2019">
+                        <p>2019/12/31<img id="timearrow" src="resourses/icons/icon_arrow02.svg"></p>
+                    </div>
+
+                    <div class="contentbody">
+                        <p>Did you know you could save recurring bills on gomoney? We've created this feature to make
+things easier for you. ...</p>
+                    </div>
+                </div>
+    
+            </section>
+        </div>
+
+        <img class="logo" id="logo" src="resourses/icons/logo.png">
+
+    </body>
+
+</html>
